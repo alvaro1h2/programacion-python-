@@ -1,0 +1,14 @@
+función filtrar_señal(frecuencia_señal):
+    mu = 1000  # media
+    sigma = 300  # desviación estándar
+    prob_acumulada = 0
+    paso_frecuencia = 1
+
+    para frecuencia en rango(0, frecuencia_señal + paso_frecuencia, paso_frecuencia):
+        fdp = 1 / (sigma * sqrt(2 * pi)) * exp(-1/2 * ((frecuencia - mu) / sigma)^2)
+        prob_acumulada += fdp * paso_frecuencia  # Se suma la fdp multiplicada por el paso de frecuencia
+
+    si prob_acumulada > 0.30:
+        devolver "La señal pasa el filtro."
+    sino:
+        devolver "La señal es bloqueada por el filtro."

@@ -1,0 +1,14 @@
+Entrada: frecuencia_señal = 1200 Hz
+
+Salida esperada: "La señal pasa el filtro."
+Razonamiento: La probabilidad acumulada para una frecuencia de 1200 Hz es mayor que 0.3, por lo tanto, la señal pasa el filtro.
+Entrada: frecuencia_señal = 800 Hz
+
+Salida esperada: "La señal es bloqueada por el filtro."
+Razonamiento: La probabilidad acumulada para una frecuencia de 800 Hz es menor que 0.3, por lo tanto, la señal es bloqueada por el filtro.
+
+
+¿para qué valor de frecuencia la señal deja de ser bloqueada?
+Para encontrar el valor de frecuencia en el que la señal deja de ser bloqueada por el filtro, necesitamos probar diferentes frecuencias y calcular la probabilidad acumulada para cada una. Empezamos con una frecuencia de 0 Hz y vamos aumentándola de a 1 Hz. Por cada frecuencia probada, calculamos la probabilidad acumulada de acuerdo a la función de densidad de probabilidad (fdp) con una media de 1000 Hz y una desviación estándar de 300 Hz.
+
+Continuamos aumentando la frecuencia y recalculando la probabilidad acumulada hasta que esta supere el umbral de 0.3. En ese momento, detenemos el proceso y el valor de frecuencia alcanzado será aquel en el que la señal deja de ser bloqueada por el filtro.

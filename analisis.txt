@@ -1,0 +1,15 @@
+Función fdp(x, mu, sigma):
+
+Esta función calcula el valor de la función de densidad de probabilidad (fdp) de una distribución normal en un punto dado x, con media mu y desviación estándar sigma.
+Función filtro_gaussiano(frecuencia):
+
+Esta función simula el proceso de filtrado de una señal con una frecuencia dada.
+Utiliza un bucle for para calcular la probabilidad acumulada de que la señal pase el filtro, sumando la fdp de cada frecuencia desde cero hasta la frecuencia de la señal dada.
+Si la probabilidad acumulada es mayor al 30%, la función devuelve "La señal pasa el filtro."; de lo contrario, devuelve "La señal es bloqueada por el filtro."
+Análisis de eficiencia:
+
+El código es eficiente en términos de complejidad computacional, ya que realiza un único bucle for para calcular la probabilidad acumulada.
+Sin embargo, podría mejorarse utilizando técnicas de optimización numérica para evitar calcular la fdp de cada frecuencia en el bucle.
+Ejemplo de uso:
+
+El ejemplo de uso al final del código muestra cómo utilizar la función filtro_gaussiano para determinar si una señal con frecuencia de 1200 Hz pasaría o sería bloqueada por el filtro.
