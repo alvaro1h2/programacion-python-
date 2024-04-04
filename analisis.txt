@@ -1,3 +1,4 @@
+Filtrar señales utilizando la función de probabilidad de la campana de Gauss 3/04/2024 alvaro jose hernanadez marmol alvaro.hernandezm@upb.udu.co
 Función fdp(x, mu, sigma):
 
 Esta función calcula el valor de la función de densidad de probabilidad (fdp) de una distribución normal en un punto dado x, con media mu y desviación estándar sigma.
